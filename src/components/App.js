@@ -3,14 +3,19 @@ import '../styles/App.css';
 
 class App extends Component {
     render() {
-
-        return(
-           <>
-//write your code here
-	</>
-        )
+      const cities = ["abc", "bcd", "cde"];
+      return (
+        <>
+          <ol>
+            {cities.map((city, index) => (
+              <li key={`location${index + 1} `}>{city}</li>
+            ))}
+          </ol>
+        </>
+      );
     }
-}
+  }
+  
 
 
 export default App;
